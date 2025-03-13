@@ -13,6 +13,15 @@ return {
     end,
   },
 
+  {
+    "rmagatti/auto-session",
+    lazy = false,
+
+    opts = {
+      suppressed_dirs = { "~/", "~/Downloads", "/" }
+    }
+  }
+
   -- {
   -- 	"nvim-treesitter/nvim-treesitter",
   -- 	opts = {
