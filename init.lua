@@ -38,6 +38,10 @@ end)
 
 -- neovide specific
 if vim.g.neovide then
-    vim.g.neovide_refresh_rate = 144
     vim.g.neovide_remember_window_size = true
+    vim.g.neovide_cursor_smooth_blink = true
+    vim.g.neovide_cursor_vfx_mode = "pixiedust"
+    vim.g.neovide_cursor_vfx_particle_lifetime = 1
+    vim.g.neovide_cursor_vfx_opacity = 60
+    vim.g.neovide_cursor_vfx_density = 10
 end
