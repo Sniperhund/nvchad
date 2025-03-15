@@ -35,3 +35,9 @@ require "nvchad.autocmds"
 vim.schedule(function()
   require "mappings"
 end)
+
+-- neovide specific
+if vim.g.neovide then
+    vim.g.neovide_refresh_rate = 144
+    vim.g.neovide_remember_window_size = true
+end
