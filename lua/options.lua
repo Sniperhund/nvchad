@@ -7,6 +7,8 @@ local o = vim.o
 
 o.guifont = "JetBrainsMono NF:h10"
 
+o.cindent = true
+o.tabstop = 4
 o.softtabstop = 4
 o.shiftwidth = 4
 o.expandtab = true
