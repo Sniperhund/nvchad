@@ -22,15 +22,30 @@ return {
     {
         "wakatime/vim-wakatime",
         lazy = false,
-    }
+    },
 
-    -- {
-    -- 	"nvim-treesitter/nvim-treesitter",
-    -- 	opts = {
-    -- 		ensure_installed = {
-    -- 			"vim", "lua", "vimdoc",
-    --      "html", "css"
-    -- 		},
-    -- 	},
-    -- },
+    {
+        "windwp/nvim-ts-autotag",
+        lazy = false,
+        dependencies = "nvim-treesitter/nvim-treesitter",
+        config = function ()
+            require("nvim-ts-autotag").setup()
+        end
+    },
+
+    {
+        "nvim-treesitter/nvim-treesitter",
+        build = ":TSUpdate",
+        opts = {
+            ensure_installed = {
+                "html", "css", "scss", "vue", "cpp", "c", "typescript", "javascript"
+            },
+            sync_install = true,
+        }
+    },
+
+    {
+        "nvim-treesitter/nvim-treesitter-context",
+        lazy = false
+    }
 }
