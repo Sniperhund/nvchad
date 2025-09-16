@@ -1,4 +1,6 @@
 return {
+    { import = "nvchad.blink.lazyspec" },
+
     {
         "stevearc/conform.nvim",
         -- event = 'BufWritePre', -- uncomment for format on save
@@ -47,5 +49,11 @@ return {
     {
         "nvim-treesitter/nvim-treesitter-context",
         lazy = false
+    },
+
+    {
+        'mrcjkb/rustaceanvim',
+        version = '^6', -- Recommended
+        lazy = false, -- This plugin is already lazy
     }
 }
